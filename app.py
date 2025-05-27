@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS  # ✅ Import CORS
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import pandas as pd
@@ -9,6 +10,8 @@ import os
 load_dotenv()
 # Initialize Flask
 app = Flask(__name__)
+CORS(app)  # ✅ Enable CORS for all origins (you can restrict it later)
+
 
 # MongoDB Connection
 MONGODB_URL = os.getenv("MONGODB_URL")
