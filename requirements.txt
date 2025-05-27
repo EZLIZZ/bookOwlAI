@@ -5,3 +5,4 @@ pandas
 pymongo
 scikit-learn
 gunicorn
+python-dotenv
