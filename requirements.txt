@@ -2,5 +2,6 @@ Flask
 Flask-CORS
 numpy
 pandas
+pymongo
 scikit-learn
 gunicorn
